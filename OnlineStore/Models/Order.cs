@@ -9,13 +9,13 @@ namespace OnlineStore.Models
     {
         public Order(string title, string comment, string name, string email, string phone, DateTime dateTime, int clientId)
         {
-            title = Title;
-            comment = Comment;
-            name = Name;
-            email = Email;
-            phone = Phone;
-            dateTime = DateTime;
-            clientId = ClientId;
+            Title = title;
+            Comment = comment;
+            Name = name;
+            Email = email;
+            Phone = phone;
+            DateTime = dateTime;
+            ClientId = clientId;
         }
 
         public int Id { get; set; }

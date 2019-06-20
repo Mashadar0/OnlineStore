@@ -9,7 +9,7 @@ namespace OnlineStore.Models
     {
         public Category(string title)
         {
-            title = Title;
+            Title = title;
         }
 
         public int Id { get; set; }

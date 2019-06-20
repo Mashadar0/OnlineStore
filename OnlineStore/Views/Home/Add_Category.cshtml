@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добавление категории</title>
+</head>
+<body>
+    <div>
+        <h3>Форма добавления категории</h3>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.PhoneId" name="PhoneId" />
+            <table>
+                <tr>
+                    <td>Имя:</td>
+                    <td><input type="text" name="User" /> </td>
+                </tr>
+                <tr>
+                    <td>Адрес:</td>
+                    <td><input type="text" name="Address" /></td>
+                </tr>
+                <tr>
+                    <td>Телефон:</td>
+                    <td><input type="text" name="ContactPhone" /></td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

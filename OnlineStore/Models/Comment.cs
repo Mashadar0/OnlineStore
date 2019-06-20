@@ -9,9 +9,9 @@ namespace OnlineStore.Models
     {
         public Comment(string name, string email, string phone)
         {
-            name = Name;
-            email = Email;
-            phone = Phone;
+            Name = name;
+            Email = email;
+            Phone = phone;
         }
 
         public int Id { get; set; }

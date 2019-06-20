@@ -9,8 +9,8 @@ namespace OnlineStore.Models
     {
         public Value(int fileAddId, int productId)
         {
-            fileAddId = FileAddId;
-            productId = ProductId;
+            FileAddId = fileAddId;
+            ProductId = productId;
         }
 
         public int Id { get; set; }

@@ -9,9 +9,9 @@ namespace OnlineStore.Models
     {
         public User(string login, string password, int roleId)
         {
-            login = Login;
-            password = Password;
-            roleId = RoleId;
+            Login = login;
+            Password = password;
+            RoleId = roleId;
         }
 
         public int Id { get; set; }

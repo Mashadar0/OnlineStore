@@ -9,12 +9,12 @@ namespace OnlineStore.Models
     {
         public Product(string title, string description, string mainImage, bool isDiscount, bool isMain, int categoryId)
         {
-            title = Title;
-            description = Description;
-            mainImage = MainImage;
-            isDiscount = IsDiscount;
-            isMain = IsMain;
-            categoryId = CategoryId;
+            Title = title;
+            Description = description;
+            MainImage = mainImage;
+            IsDiscount = isDiscount;
+            IsMain = isMain;
+            CategoryId = categoryId;
         }
 
         public int Id { get; set; }

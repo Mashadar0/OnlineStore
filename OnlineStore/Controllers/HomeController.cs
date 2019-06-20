@@ -10,20 +10,14 @@ namespace OnlineStore.Controllers
 {
     public class HomeController : Controller
     {
+        StoreContext db;
+        public HomeController(StoreContext context)
+        {
+            db = context;
+        }
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(db.Categories.ToList());
         }
     }
 }

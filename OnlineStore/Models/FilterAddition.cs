@@ -9,8 +9,8 @@ namespace OnlineStore.Models
     {
         public FilterAddition(string title, int filterId)
         {
-            title = Title;
-            filterId = FilterId;
+            Title = title;
+            FilterId = filterId;
         }
 
         public int Id { get; set; }

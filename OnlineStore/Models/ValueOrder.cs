@@ -9,8 +9,8 @@ namespace OnlineStore.Models
     {
         public ValueOrder(int productId, int orderId)
         {
-            productId = ProductId;
-            orderId = OrderId;
+            ProductId = productId;
+            OrderId = orderId;
         }
 
         public int Id { get; set; }

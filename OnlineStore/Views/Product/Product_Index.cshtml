@@ -1,0 +1,40 @@
+﻿@page
+@model IEnumerable<OnlineStore.Models.Product>
+@{
+    //ViewData["Title"] = "Product_Index";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Продукция</title>
+</head>
+<body>
+    <h3>Список</h3>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Наименование</td>
+            <td>Описание</td>
+            <td>Изображение</td>
+            <td>Скидка</td>
+            <td>Размещено на главной</td>
+            <td>Id Категории</td>
+        </tr>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Title</td>
+                <td>@product.Description</td>
+                <td>@product.MainImage</td>
+                <td></td>
+                <td></td>
+                <td>@product.CategoryId</td>
+            </tr>
+        }
+    </table>
+    @*<a href="~/Home/AddProduct">Добавить</a>*@
+</body>
+</html>

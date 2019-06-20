@@ -9,9 +9,9 @@ namespace OnlineStore.Models
     {
         public Property(string title, string description, string image)
         {
-            title = Title;
-            description = Description;
-            image = Image;
+            Title = title;
+            Description = description;
+            Image = image;
         }
 
         public int Id { get; set; }
